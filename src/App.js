@@ -1,15 +1,15 @@
 // import logo from './logo.svg';
 import React ,{ useState } from 'react';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 
 
@@ -45,19 +45,19 @@ setTimeout(() => {
   }
   return (
     <>
-    {/* <Router> */}
+    <Router>
 
   <Navbar mode ={mode} togglemode={togglemode} /> 
   <Alert alert={alert}/>
   <div className='container my-3'> 
-  {/* <Routes>
+  <Routes>
           <Route exact path="/about" element={<About mode={mode}/>}>
           </Route>
-          <Route exact path="/" element={ */}
-          <TextForm showAlert={showAlert} heading ="Enter your text to analyze" mode={mode}/>
-        {/* </Routes>  */}
+          <Route exact path="/" element={
+          <TextForm showAlert={showAlert} heading ="Enter your text to analyze" mode={mode}/>}/>
+         </Routes>  
    </div>
-     {/* </Router>  */}
+      </Router>  
      
    </>
   );
