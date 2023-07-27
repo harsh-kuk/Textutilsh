@@ -57,7 +57,11 @@ setTimeout(() => {
           <TextForm showAlert={showAlert} heading ="Enter your text to analyze" mode={mode}/>}/>
          </Routes>  
    </div>
+<<<<<<< HEAD
      </Router> 
+=======
+      </Router>  
+>>>>>>> b2e2ad89e1fb787b2b470fab57f6b348d2e12274
      
    </>
   );
